@@ -10,7 +10,7 @@
 - [ ] DELETE
 - [x] SELECT-FROM-WHERE
 - [x] BETWEEN
-- [ ] IN
+- [x] IN
 - [x] LIKE
 - [ ] IS NULL ou IS NOT NULL
 - [ ] INNER JOIN

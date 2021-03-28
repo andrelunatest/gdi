@@ -8,11 +8,11 @@
 - [x] INSERT INTO
 - [ ] UPDATE
 - [ ] DELETE
-- [ ] SELECT-FROM-WHERE
-- [ ] BETWEEN
-- [ ] IN
-- [ ] LIKE
-- [ ] IS NULL ou IS NOT NULL
+- [x] SELECT-FROM-WHERE
+- [x] BETWEEN
+- [x] IN
+- [x] LIKE
+- [x] IS NULL ou IS NOT NULL
 - [ ] INNER JOIN
 - [ ] MAX
 - [ ] MIN

@@ -11,7 +11,7 @@
 - [x] SELECT-FROM-WHERE
 - [x] BETWEEN
 - [ ] IN
-- [ ] LIKE
+- [x] LIKE
 - [ ] IS NULL ou IS NOT NULL
 - [ ] INNER JOIN
 - [ ] MAX

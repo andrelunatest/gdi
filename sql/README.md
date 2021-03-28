@@ -12,7 +12,7 @@
 - [x] BETWEEN
 - [x] IN
 - [x] LIKE
-- [ ] IS NULL ou IS NOT NULL
+- [x] IS NULL ou IS NOT NULL
 - [ ] INNER JOIN
 - [ ] MAX
 - [ ] MIN

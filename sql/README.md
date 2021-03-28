@@ -8,8 +8,8 @@
 - [x] INSERT INTO
 - [ ] UPDATE
 - [ ] DELETE
-- [ ] SELECT-FROM-WHERE
-- [ ] BETWEEN
+- [x] SELECT-FROM-WHERE
+- [x] BETWEEN
 - [ ] IN
 - [ ] LIKE
 - [ ] IS NULL ou IS NOT NULL

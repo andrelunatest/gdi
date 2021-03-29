@@ -13,7 +13,7 @@
 - [x] IN
 - [x] LIKE
 - [x] IS NULL ou IS NOT NULL
-- [ ] INNER JOIN
+- [x] INNER JOIN
 - [ ] MAX
 - [ ] MIN
 - [ ] AVG
@@ -23,7 +23,7 @@
 - [ ] SUBCONSULTA COM IN
 - [ ] SUBCONSULTA COM ANY
 - [ ] SUBCONSULTA COM ALL
-- [ ] ORDER BY
+- [x] ORDER BY
 - [ ] GROUP BY
 - [ ] HAVING
 - [ ] UNION ou INTERSECT ou MINUS

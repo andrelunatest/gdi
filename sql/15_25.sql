@@ -1,5 +1,5 @@
 -- 15, 25: INNER JOIN and ORDER BY
--- Folha de pagamento por valor
+-- Folha de pagamento ordenado por valor
 
 SELECT P.NOME, T.SALARIO
 FROM PROFESSOR T

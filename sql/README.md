@@ -14,18 +14,18 @@
 - [x] LIKE
 - [x] IS NULL ou IS NOT NULL
 - [x] INNER JOIN
-- [ ] MAX
-- [ ] MIN
-- [ ] AVG
-- [ ] COUNT
-- [ ] LEFT ou RIGHT ou FULL OUTER JOIN
+- [x] MAX
+- [x] MIN
+- [x] AVG
+- [x] COUNT
+- [x] LEFT ou RIGHT ou FULL OUTER JOIN
 - [ ] SUBCONSULTA COM OPERADOR RELACIONAL
 - [ ] SUBCONSULTA COM IN
 - [ ] SUBCONSULTA COM ANY
 - [ ] SUBCONSULTA COM ALL
 - [x] ORDER BY
-- [ ] GROUP BY
-- [ ] HAVING
+- [x] GROUP BY
+- [x] HAVING
 - [ ] UNION ou INTERSECT ou MINUS
 - [ ] CREATE VIEW
 - [ ] GRANT / REVOKE

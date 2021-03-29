@@ -1,0 +1,5 @@
+-- 18: AVG
+-- Média salarial
+
+SELECT AVG(SALARIO) AS MEDIA
+FROM PROFESSOR;

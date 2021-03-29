@@ -1,0 +1,5 @@
+-- 17: MIN
+-- Menor salário
+
+SELECT MIN(SALARIO)
+FROM PROFESSOR;

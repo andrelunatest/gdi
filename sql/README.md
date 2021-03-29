@@ -6,8 +6,8 @@
 - [x] CLÁUSULA CHECK EM CREATE TABLE
 - [x] CREATE INDEX
 - [x] INSERT INTO
-- [ ] UPDATE
-- [ ] DELETE
+- [x] UPDATE
+- [x] DELETE
 - [x] SELECT-FROM-WHERE
 - [x] BETWEEN
 - [x] IN
@@ -28,4 +28,4 @@
 - [x] HAVING
 - [ ] UNION ou INTERSECT ou MINUS
 - [ ] CREATE VIEW
-- [ ] GRANT / REVOKE
+- [x] GRANT / REVOKE

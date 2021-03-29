@@ -1,8 +1,8 @@
 -- 24: Subconsulta com ALL
--- Retorna os salarios dos monitores se todos professores tiverem salario = 5000.00
+-- Retorna todos os cpf_professor e cod_curso
 
-SELECT SALARIO FROM MONITOR
-	WHERE CPF_PROFESSOR = ALL
-	(SELECT CPF_PROFESSOR 
-	FROM PROFESSOR
-	WHERE SALARIO = 5000.00);
+SELECT CPF_PROFESSOR, COD_CURSO FROM INSTRUIR
+	WHERE CPF_ESTUDANTE = ALL 
+	(SELECT CPF_ESTUDANTE 
+	FROM ESTUDANTE
+	WHERE CODIGO_ID = 2);

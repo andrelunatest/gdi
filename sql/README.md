@@ -26,6 +26,6 @@
 - [x] ORDER BY
 - [x] GROUP BY
 - [x] HAVING
-- [ ] UNION ou INTERSECT ou MINUS
-- [ ] CREATE VIEW
+- [x] UNION ou INTERSECT ou MINUS
+- [x] CREATE VIEW
 - [x] GRANT / REVOKE

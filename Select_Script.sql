@@ -67,7 +67,7 @@ HAVING C.NOME LIKE '%Exatas%'
 -- 21, 22: Subconsulta com IN e Operador relacional
 -- Retorna o cpf_estudante dos estudantes que não pagam 300 reais de mesalidade
 
-SELECT CPF_ESTUDANTE FROM ESTUDANTE
+SELECT CPF_ESTUDANTE, COD_PLANO FROM ESTUDANTE
 	WHERE COD_PLANO IN 
 	(SELECT PLANO_ID
 	FROM PLANO
@@ -75,7 +75,7 @@ SELECT CPF_ESTUDANTE FROM ESTUDANTE
 
 
 -- 23: Subconsulta com ANY
--- Retorna os salarios dos monitores se algum professor tiver salario = 5000.00
+-- Retorna os salarios dos monitores que estão ligados a professores que ganham um salario igual a 5000
 
 SELECT SALARIO FROM MONITOR
 	WHERE CPF_PROFESSOR = ANY
@@ -85,18 +85,35 @@ SELECT SALARIO FROM MONITOR
 	);
 
 -- 24: Subconsulta com ALL
--- Retorna os salarios dos monitores se todos professores tiverem salario = 5000.00
+-- Retorna todos os cpf_professor e cod_curso
 
-SELECT SALARIO FROM MONITOR
-	WHERE CPF_PROFESSOR = ALL
-	(SELECT CPF_PROFESSOR 
-	FROM PROFESSOR
-	WHERE SALARIO = 5000.00);
+SELECT CPF_PROFESSOR, COD_CURSO FROM INSTRUIR
+	WHERE CPF_ESTUDANTE = ALL 
+	(SELECT CPF_ESTUDANTE 
+	FROM ESTUDANTE
+	WHERE CODIGO_ID = 2);
 
 -- 28: UNION | INTERSECT | MINUS
---
+-- Retorna os cpf das pessoas que são professores e que tem monitores ligados a ele
+-- Retorna os cpf das pessoas e também o cargo delas caso sejam professores, organizando por cpf para que o professor apareça proximo a sua atividade relacionada
 
+SELECT CPF FROM PESSOA
+INTERSECT
+SELECT CPF_PROFESSOR FROM MONITOR;
+
+(SELECT CPF, NOME FROM PESSOA
+UNION
+SELECT CPF_PROFESSOR, CARGO FROM PROFESSOR) ORDER BY CPF;
 
 
 -- 29: CREATE VIEW
---
+-- Cria a view ESTUDANTE_CURSO, que retorna o curso_id e nome do curso, e também os cpf_estudante do estudantes que acessam tal curso. Organizado pelo codigo do curso pra facilitar a visualização de qual curso cada aluno faz.
+
+DROP VIEW ESTUDANTE_CURSO;
+
+CREATE VIEW ESTUDANTE_CURSO AS
+(SELECT CURSO_ID, NOME FROM CURSO
+UNION
+SELECT COD_CURSO, CPF_ESTUDANTE FROM ACESSA) ORDER BY CURSO_ID; 
+
+SELECT * FROM ESTUDANTE_CURSO;

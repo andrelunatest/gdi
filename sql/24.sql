@@ -1,8 +1,0 @@
--- 24: Subconsulta com ALL
--- Retorna todos os cpf_professor e cod_curso
-
-SELECT CPF_PROFESSOR, COD_CURSO FROM INSTRUIR
-	WHERE CPF_ESTUDANTE = ALL 
-	(SELECT CPF_ESTUDANTE 
-	FROM ESTUDANTE
-	WHERE CODIGO_ID = 2);

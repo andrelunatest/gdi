@@ -18,7 +18,7 @@ WHERE CIDADE IN ('Recife', 'Olinda');
 
 SELECT CARGO
 FROM PROFESSOR
-WHERE CARGO LIKE '%Exatas%'
+WHERE CARGO LIKE '%Exatas%';
 
 -- 14: IS NULL
 -- Monitores registrados sem nome
@@ -62,7 +62,7 @@ FROM ACESSA A
 LEFT JOIN CURSO C
 ON A.COD_CURSO = C.CURSO_ID
 GROUP BY A.COD_CURSO, C.NOME
-HAVING C.NOME LIKE '%Exatas%'
+HAVING C.NOME LIKE '%Exatas%';
 
 -- 21, 22: Subconsulta com IN e Operador relacional
 -- Retorna o cpf_estudante dos estudantes que não pagam 300 reais de mesalidade

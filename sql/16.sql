@@ -1,5 +1,0 @@
--- 16: MAX
--- Maior salário
-
-SELECT MAX(SALARIO)
-FROM PROFESSOR;

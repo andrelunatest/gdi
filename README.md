@@ -7,3 +7,6 @@ Repositório para o projeto da disciplina de GDI/Cin UFPE - 2020.1 - Equipe 5
 - Matheus Oliveira - *mjmo*
 - Melissa Falcão - *mcmf*
 - Lúcio Melo - *lfmm2*
+
+## SQL
+Os scripts SQL estão em `Select_Script.sql`.
